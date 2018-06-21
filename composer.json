@@ -1,0 +1,21 @@
+{
+    "name": "phpappbuilder/space",
+    "description": "Space connector for centurion-app",
+    "type": "library",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Вячеслав",
+            "email": "slavik@itservices.in.ua"
+        }
+    ],
+    "autoload":
+    {"psr-4":
+    { "Space\\": "src/"}
+    },
+    "require": {
+        "nikic/php-parser": "4.0.2",
+        "vlucas/phpdotenv": "^2.4"
+    }
+    
+}
