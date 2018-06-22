@@ -10,15 +10,15 @@ use PhpParser\PrettyPrinter;
 class Builder
 {
 
-    private $temp = 'var/space';
+    private $temp = 'var/phpappbuilder/space';
     private $BundleList = [];
     private $KeyList = [];
     private $CollectionList = [];
 
 
-    function __construct() {
-        $this->temp = getenv('space_path');
-    }
+    //function __construct() {
+    //    $this->temp = getenv('space_path');
+    //}
     /* Keys */
     //возвращает спсиок ключей в пространстве
     public function GetKeys( $path ) {
