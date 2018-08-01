@@ -45,5 +45,6 @@ class Build extends Command
             {
                 $output->writeln("[".$i."]". " - " . $c[0][$i]);
             }
+        exec('notify-send "The space for your application is built"');
     }
 }
