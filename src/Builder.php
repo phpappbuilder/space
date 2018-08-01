@@ -16,9 +16,12 @@ class Builder
     private $CollectionList = [];
 
 
-    //function __construct() {
-    //    $this->temp = getenv('space_path');
-    //}
+    function __construct() {
+        if (!is_dir($this->temp)){
+            mkdir($this->temp, 0777, true);
+        }
+    }
+
     /* Keys */
     //возвращает спсиок ключей в пространстве
     public function GetKeys( $path ) {
